@@ -92,6 +92,7 @@ install_theme() {
     echo -e "PILIH THEME YANG INGIN DI INSTALL"
     echo "1. stellar"
     echo "2. billing"
+    echo "3. enigma"
     echo "x. kembali"
     echo -e "masukan pilihan (1/2/x) :"
     read -r SELECT_THEME
