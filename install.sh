@@ -150,7 +150,7 @@ sleep 2
 clear
   return
   
-  elif [ "$SELECT_THEME" -eq 2 ]; then
+  if [ "$SELECT_THEME" -eq 2 ]; then
 echo -e "                                                       "
 echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
@@ -177,7 +177,7 @@ echo -e "                                                       "
 sleep 2
 clear
   return
-if [ "$SELECT_THEME" -eq 3 ]; then
+elif [ "$SELECT_THEME" -eq 3 ]; then
 echo -e "                                                       "
 echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
