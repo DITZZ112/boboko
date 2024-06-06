@@ -107,6 +107,7 @@ install_theme() {
         ;;
       3)
         THEME_URL="https://github.com/DITZZ112/foxxhostt/raw/main/C3.zip"
+        ;;
       x)
         return
         ;;
