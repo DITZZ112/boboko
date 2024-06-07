@@ -13,7 +13,7 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]            WELCOME TO AUTO INSTALLER            [+]${NC}"
-  echo -e "${BLUE}[+]               COPYRIGHT BY FOXSTORE              [+]${NC}"
+  echo -e "${BLUE}[+]               COPYRIGHT BY FOXSTORE             [+]${NC}"
   echo -e "${BLUE}[+]               inspiration by chiwa              [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
