@@ -34,6 +34,15 @@ display_welcome() {
   clear
 }
 
+# Cek Ram
+available_ram=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
+available_ram_mb=$((available_ram / 1024))
+
+# Melakukan Pengecekan
+if (( available_ram_mb < 3919 )); then
+  echo "${RED}RAM yang tersedia kurang dari 4GB. Script tidak akan dijalankan.${NC}"
+  exit 1
+fi
 # Update and install jq
 install_jq() {
   echo -e "                                                       "
