@@ -7,6 +7,10 @@ GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
+# Cek Ram
+available_ram=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
+available_ram_mb=$((available_ram / 1024))
+
 # Display welcome message
 display_welcome() {
   echo -e "                                                       "
@@ -34,13 +38,9 @@ display_welcome() {
   clear
 }
 
-# Cek Ram
-available_ram=$(grep MemAvailable /proc/meminfo | awk '{print $2}')
-available_ram_mb=$((available_ram / 1024))
-
 # Melakukan Pengecekan
-if (( available_ram_mb < 3919 )); then
-  echo "${RED}RAM yang tersedia kurang dari 4GB. Script tidak akan dijalankan.${NC}"
+if (( available_ram_mb < 3800 )); then
+  echo -e "${RED}RAM yang tersedia kurang dari 4GB. Script tidak akan dijalankan.${NC}"
   exit 1
 fi
 # Update and install jq
