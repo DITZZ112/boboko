@@ -39,7 +39,7 @@ display_welcome() {
 }
 
 # Melakukan Pengecekan
-if (( available_ram_mb < 3800 )); then
+if (( available_ram_mb < 2048 )); then
   echo -e "${RED}RAM yang tersedia kurang dari 4GB. Script tidak akan dijalankan.${NC}"
   exit 1
 fi
