@@ -195,20 +195,21 @@ elif [ "$SELECT_THEME" -eq 3 ]; then
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                                   "
 
-  echo -e "${YELLOW}Masukan Link Wa Owner (exmp : https//.... ) : ${NC}"
-  read LINK_WA
-  echo -e "${YELLOW}Masukkan Link Group Wa (exmp : https//.... ) : ${NC}"
-  read LINK_GROUP
-  echo -e "${YELLOW}Masukkan Link Channel Wa (exmp : https//.... ) : ${NC}"
-  read LINK_CHNL
-  echo -e "${YELLOW}Masukkan WIDGET DISCORD : ${NC}"
-  read LINK_WGET_DC
+    # Menanyakan informasi kepada pengguna untuk tema Enigma
+    echo -e "${YELLOW}Masukkan link untuk 'LINK_BC_BOT': ${NC}"
+    read LINK_BC_BOT
+    echo -e "${YELLOW}Masukkan nama untuk 'NAMA_OWNER_PANEL': ${NC}"
+    read NAMA_OWNER_PANEL
+    echo -e "${YELLOW}Masukkan link untuk 'LINK_GC_INFO': ${NC}"
+    read LINK_GC_INFO
+    echo -e "${YELLOW}Masukkan link untuk 'LINKTREE_KALIAN': ${NC}"
+    read LINKTREE_KALIAN
 
-  # Mengganti placeholder dengan nilai dari pengguna
-  sudo sed -i "s|LINK_WA|$LINK_WA|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
-  sudo sed -i "s|LINK_GROUP|$LINK_GROUP|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
-  sudo sed -i "s|LINK_CHNL|$LINK_CHNL|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
-  sudo sed -i "s|LINK_WGET_DC|$LINK_WGET_DC|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
+    # Mengganti placeholder dengan nilai dari pengguna
+    sudo sed -i "s|LINK_BC_BOT|$LINK_BC_BOT|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
+    sudo sed -i "s|NAMA_OWNER_PANEL|$NAMA_OWNER_PANEL|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
+    sudo sed -i "s|LINK_GC_INFO|$LINK_GC_INFO|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
+    sudo sed -i "s|LINKTREE_KALIAN|$LINKTREE_KALIAN|g" /root/pterodactyl/resources/scripts/components/dashboard/DashboardContainer.tsx
 
   sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
   curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
