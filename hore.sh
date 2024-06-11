@@ -225,7 +225,7 @@ elif [ "$SELECT_THEME" -eq 3 ]; then
   echo -e "${GREEN}[+]                   INSTALL SUCCESS               [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e ""
-
+  sleep 5
 else
   echo ""
   echo "Pilihan tidak valid. silahkan pilih 1/2/3."
