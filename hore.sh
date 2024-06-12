@@ -38,7 +38,7 @@ if (( available_ram_mb < 2048 )); then
   echo -e "${RED}RAM yang tersedia kurang dari 4GB. Script tidak akan dijalankan.${NC}"
   exit 1
 fi
- Update and install jq
+#Update and install jq
 install_jq() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
@@ -62,7 +62,7 @@ install_jq() {
   sleep 1
   clear
 }
- Check user token
+#Check user token
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
