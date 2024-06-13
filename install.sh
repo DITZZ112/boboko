@@ -25,11 +25,10 @@ display_welcome() {
   echo -e "dilarang keras untuk memperjual belikan."
   echo -e ""
   echo -e "𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 :"
-  echo -e "081585058824"
+  echo -e "0853-7227-7748"
   echo -e "𝗬𝗢𝗨𝗧𝗨𝗕𝗘 :"
-  echo -e "@ibzz-official"
+  echo -e "@foxstore_id"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@foxstore"
   echo -e "@Chiwa"
   sleep 4
   clear
