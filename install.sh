@@ -17,7 +17,7 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © IBZZ OFFICIAL                [+]${NC}"
+  echo -e "${BLUE}[+]                  © FOXSTORE OFFC                [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e ""
@@ -68,10 +68,10 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY IBZZ OFFICIAL             [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSY FOXSTORE OFFC             [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  ibzz=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x65\x74\x70\x61\x6E\x74\x72\x79\x2E\x63\x6C\x6F\x75\x64\x2F\x61\x70\x69\x76\x31\x2F\x70\x61\x6E\x74\x72\x79\x2F\x31\x63\x35\x38\x36\x37\x39\x62\x2D\x39\x30\x35\x62\x2D\x34\x66\x33\x30\x2D\x62\x61\x61\x64\x2D\x30\x33\x65\x31\x33\x62\x61\x62\x34\x31\x65\x38\x2F\x62\x61\x73\x6B\x65\x74\x2F\x61\x70\x69\x6B\x65\x79")
+  ibzz=$(echo -e "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x67\x65\x74\x70\x61\x6e\x74\x72\x79\x2e\x63\x6c\x6f\x75\x64\x2f\x61\x70\x69\x76\x31\x2f\x70\x61\x6e\x74\x72\x79\x2f\x31\x31\x64\x34\x65\x33\x34\x64\x2d\x30\x39\x33\x34\x2d\x34\x39\x35\x38\x2d\x39\x64\x30\x36\x2d\x35\x32\x34\x31\x39\x65\x66\x38\x30\x61\x65\x61\x2f\x62\x61\x73\x6b\x65\x74\x2f\x54\x68\x65\x6d\x61\x61\x63\x63\x65\x73\x73")
   ibzzz=$(curl -s "$ibzz" | jq -r .token)
 
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
